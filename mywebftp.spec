@@ -1,5 +1,5 @@
-Summary:	little PHP Tool to manage your webspace, through a web browser.
-Summary(pl):	aplikacja w PHP do zarz±dzania przestrzeni± www poprzez przegl±darke
+Summary:	Little PHP Tool to manage your webspace, through a web browser
+Summary(pl):	Aplikacja w PHP do zarz±dzania przestrzeni± WWW poprzez przegl±darkê
 Name:		mywebftp
 Version:	0.2
 Release:	1
@@ -23,9 +23,9 @@ FTP Client. Uses only PHP file functions..
 
 %description -l pl
 MyWebFTP to ma³e narzêdzie w PHP, które pozwala na zarz±dzanie poprzez
-przegl±darkê, plikami i katalogami znajduj±cymi sie w naszej
-przestrzni www. Program ten staje siê bardzo przydatny je¶li jeste¶my
-za jakim¶ restrykcyjnym proxy, gdy¿ u¿ywa tylko funkcji PHP
+przegl±darkê, plikami i katalogami znajduj±cymi sie w okre¶lonej
+przestrzni WWW. Program ten staje siê bardzo przydatny dla u¿ytkowników
+znajduj±cych siê za restrykcyjnym proxy, gdy¿ u¿ywa tylko funkcji PHP.
 
 %prep
 %setup -q -c %{name}-%{version}
@@ -34,7 +34,7 @@ za jakim¶ restrykcyjnym proxy, gdy¿ u¿ywa tylko funkcji PHP
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mywebftpdir}
 
-cp -af mywebftp/*			  $RPM_BUILD_ROOT%{_mywebftpdir}
+cp -af mywebftp/* $RPM_BUILD_ROOT%{_mywebftpdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
