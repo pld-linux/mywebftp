@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/mywebftp/%{name}%{version}.zip
 # Source0-md5:	82e9ece26f7e3d3f9a8121908b8de90c
 Source1:        %{name}.conf
 URL:		http://sourceforge.net/projects/mywebftp/
+Requires:	php
 Requires:	php-pcre
 Requires:	webserver
 BuildArch:	noarch
@@ -25,12 +26,13 @@ FTP Client. Uses only PHP file functions..
 
 %description -l pl
 MyWebFTP to ma³e narzêdzie w PHP, które pozwala na zarz±dzanie poprzez
-przegl±darkê, plikami i katalogami znajduj±cymi sie w okre¶lonej
-przestrzni WWW. Program ten staje siê bardzo przydatny dla u¿ytkowników
-znajduj±cych siê za restrykcyjnym proxy, gdy¿ u¿ywa tylko funkcji PHP.
+przegl±darkê plikami i katalogami znajduj±cymi siê w okre¶lonej
+przestrzeni WWW. Program ten staje siê bardzo przydatny dla
+u¿ytkowników znajduj±cych siê za restrykcyjnym proxy, gdy¿ u¿ywa tylko
+funkcji PHP.
 
 %prep
-%setup -q -c %{name}-%{version}
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -44,7 +46,6 @@ install mywebftp/config.php $RPM_BUILD_ROOT%{_sysconfdir}
 ln -sf %{_sysconfdir}/config.php $RPM_BUILD_ROOT%{_mywebftpdir}/config.php
 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/httpd/%{name}.conf
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -80,8 +81,8 @@ fi
 %attr(640,root,http) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
 %config(noreplace) %verify(not size mtime md5) /etc/httpd/%{name}.conf
 %dir %{_mywebftpdir}
-%{_mywebftpdir}/images/
-%{_mywebftpdir}/lang/
+%{_mywebftpdir}/images
+%{_mywebftpdir}/lang
 %{_mywebftpdir}/style
 %{_mywebftpdir}/*.php
 %{_mywebftpdir}/README.txt
