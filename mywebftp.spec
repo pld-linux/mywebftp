@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/mywebftp/%{name}%{version}.zip
 # Source0-md5:	82e9ece26f7e3d3f9a8121908b8de90c
 Source1:        %{name}.conf
 URL:		http://sourceforge.net/projects/mywebftp/
+BuildRequires:	unzip
 Requires:	php
 Requires:	php-pcre
 Requires:	webserver
