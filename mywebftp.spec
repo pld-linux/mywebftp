@@ -79,8 +79,8 @@ fi
 %files
 %defattr(644,root,root,755)
 %dir %{_sysconfdir}
-%attr(640,root,http) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
-%config(noreplace) %verify(not size mtime md5) /etc/httpd/%{name}.conf
+%attr(640,root,http) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
+%config(noreplace) %verify(not md5 mtime size) /etc/httpd/%{name}.conf
 %dir %{_mywebftpdir}
 %{_mywebftpdir}/images
 %{_mywebftpdir}/lang
