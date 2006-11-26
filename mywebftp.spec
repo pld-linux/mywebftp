@@ -1,3 +1,5 @@
+# TODO
+# - webapps
 Summary:	Little PHP Tool to manage your webspace, through a web browser
 Summary(pl):	Aplikacja w PHP do zarz±dzania przestrzeni± WWW poprzez przegl±darkê
 Name:		mywebftp
@@ -10,9 +12,9 @@ Source0:	http://dl.sourceforge.net/mywebftp/%{name}%{version}.zip
 Source1:	%{name}.conf
 URL:		http://mywebftp.sourceforge.net/
 BuildRequires:	unzip
-Requires:	php
-Requires:	php-pcre
+Requires:	php(pcre)
 Requires:	webserver
+Requires:	webserver(php)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
