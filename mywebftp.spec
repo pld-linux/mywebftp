@@ -1,7 +1,7 @@
 # TODO
 # - webapps
 Summary:	Little PHP Tool to manage your webspace, through a web browser
-Summary(pl):	Aplikacja w PHP do zarz±dzania przestrzeni± WWW poprzez przegl±darkê
+Summary(pl.UTF-8):   Aplikacja w PHP do zarzÄ…dzania przestrzeniÄ… WWW poprzez przeglÄ…darkÄ™
 Name:		mywebftp
 Version:	0.2
 Release:	1
@@ -27,11 +27,11 @@ directories on your webspace, through a web browser. Usefull when you
 are behind a restrictive proxy and more handy than an heavy software
 FTP Client. Uses only PHP file functions..
 
-%description -l pl
-MyWebFTP to ma³e narzêdzie w PHP, które pozwala na zarz±dzanie poprzez
-przegl±darkê plikami i katalogami znajduj±cymi siê w okre¶lonej
-przestrzeni WWW. Program ten staje siê bardzo przydatny dla
-u¿ytkowników znajduj±cych siê za restrykcyjnym proxy, gdy¿ u¿ywa tylko
+%description -l pl.UTF-8
+MyWebFTP to maÅ‚e narzÄ™dzie w PHP, ktÃ³re pozwala na zarzÄ…dzanie poprzez
+przeglÄ…darkÄ™ plikami i katalogami znajdujÄ…cymi siÄ™ w okreÅ›lonej
+przestrzeni WWW. Program ten staje siÄ™ bardzo przydatny dla
+uÅ¼ytkownikÃ³w znajdujÄ…cych siÄ™ za restrykcyjnym proxy, gdyÅ¼ uÅ¼ywa tylko
 funkcji PHP.
 
 %prep
