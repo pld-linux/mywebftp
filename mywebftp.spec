@@ -1,7 +1,7 @@
 # TODO
 # - webapps
 Summary:	Little PHP Tool to manage your webspace, through a web browser
-Summary(pl.UTF-8):   Aplikacja w PHP do zarządzania przestrzenią WWW poprzez przeglądarkę
+Summary(pl.UTF-8):	Aplikacja w PHP do zarządzania przestrzenią WWW poprzez przeglądarkę
 Name:		mywebftp
 Version:	0.2
 Release:	1
